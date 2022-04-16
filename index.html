@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1>CURRENCY CONVERTER</h1>
+        </div>
+        <div class="body">
+            <form autocomplete="off">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1" id="amountInput">
+                </div>
+
+                <div class="drop-list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/60x45/us.png" alt="flag">
+                            <select id="fromCurrency">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="icon" id="iconReverse">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/60x45/id.png" alt="flag">
+                            <select id="toCurrency">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exchange-rate">
+                    <p>Exchange Rate Result</p>
+                    <input type="text" id="exchangeRateResult">
+                </div>
+
+                <button class="exchange-button" id="exchangeButton">Get Exchange</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
